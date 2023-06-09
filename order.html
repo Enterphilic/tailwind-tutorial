@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/script.js"></script>
+    <title>Manage landing page</title>
+</head>
+
+<body class="pb-6">
+
+    <!---------navbar-->
+    <nav class=" container mx-auto p-6">
+        <!-----flex container-->
+        <div class="flex items-center justify-between">
+            <!---------logo-->
+            <div class="pt-2">
+                <img src="Images/Lunema-logo-2.png" width="100px" alt="">
+            </div>
+            <!---------menu items-->
+            <div class="hidden md:flex space-x-6 text-xl font-semibold">
+                <a href="index.html" class="hover:text-blue-900 hover:border rounded-xl p-3">Home</a>
+                <a href="#" class="hover:text-blue-900 hover:border rounded-xl p-3">Service</a>
+                <a href="#" class="hover:text-blue-900 hover:border rounded-xl p-3">Courses</a>
+                <a href="About.html" class="hover:text-blue-900 hover:border rounded-xl p-3">About us</a>
+                <a href="contact.html" class="hover:text-blue-900 hover:border rounded-xl p-3">Contact</a>
+            </div>
+            <!---------Button-->
+            <div>
+                <a href="order.html"
+                    class="hidden md:block p-3 px-6 pt-2 text-white bg-blue-900 rounded-full baseline hover:bg-red-400">place
+                    an order</a>
+            </div>
+
+
+    </nav>
+
+    <div class=" flex flex-col lg:flex-row  my-10 gap-8 ">
+        <div class=" flex-1 mx-10 my-5">
+            <div>
+                <h1 class="font-bold text-3xl mb-3 text-blue-500">Place an order</h1>
+                <p class="mb-4">Please fill this order form to help us know your needs</p>
+            </div>
+
+            <div class="bg-zinc-200 p-12">
+                <div class="flex flex-col">
+                    <h1 class="mb-4 py-19 mt-3">
+                        What would you like us to do for you?
+                    </h1>
+                    <input class="border rounded-xl py-1 px-10" type="text" placeholder="Type a service">
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="mb-4 py-19 mt-3">
+                        What is your name?
+                    </h1>
+                    <input id="ordername" class="border rounded-xl py-1 px-10" type="text" placeholder="Name">
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="mb-4 py-19 mt-3">
+                        What is your Email address?
+                    </h1>
+                    <input id="orderemail" class="border rounded-xl py-1 px-10" type="email" placeholder="Email">
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="mb-4 py-19 mt-3">
+                        Amount?
+                    </h1>
+                    <input id="orderamount" class="border rounded-xl py-1 px-10" type="number" placeholder="Amount">
+                </div>
+
+                <button onclick="getExchangeRate()" class="text-white border rounded-2xl bg-blue-700 mt-7 py-1 px-2">
+                    Place an order
+                </button>
+
+
+            </div>
+        </div>
+
+        <div class="flex-1 bg-blue-700 md:flex-col">
+            <div class="bg-blue-600">
+                <div class="flex justify-center py-6">
+                    <div>
+                        <img src="Images/how-2.png" alt="">
+                    </div>
+
+                </div>
+                <div class="flex justify-center py-2">
+                    <img src="Images/How it works-3-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
