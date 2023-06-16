@@ -17,4 +17,6 @@ async function getExchangeRate() {
     const response = await rates.json()
     console.log(response.result)
     document.getElementById("ordername").value = response.result
-}
+}  
+
+
